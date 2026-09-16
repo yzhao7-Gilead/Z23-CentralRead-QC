@@ -1,0 +1,26 @@
+# Configuration for generate_dummy_data.R
+# Edit these values for your environment before running the script.
+
+# Local folder containing the source .sas7bdat files
+input_dir: "path/to/input_sas_datasets"
+
+# Local staging folder where dummy .sas7bdat files are written before upload
+output_dir: "path/to/output_dummy_datasets"
+
+# Names of specific datasets to process (without file extension), e.g.
+# [ADTTE, ADRS]. Use ~ (null) to process all .sas7bdat files in input_dir.
+datasets: ~
+
+# Number of rows to synthesize per dataset. Use ~ (null) to keep the same
+# number of rows as the source dataset.
+n_rows: ~
+
+# Random seed for reproducibility
+seed: 20260916
+
+# OneDrive account type: "business" (work/school, e.g. Gilead O365) or
+# "personal" (consumer Microsoft account)
+onedrive_type: "business"
+
+# Destination folder path within OneDrive (created if it does not exist)
+onedrive_dest: "Documents/DummyData"
